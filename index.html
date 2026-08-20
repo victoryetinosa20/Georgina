@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
-   
+    
     <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -26,6 +26,7 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1533492241091769&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+    
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -83,7 +84,6 @@ src="https://www.facebook.com/tr?id=1533492241091769&ev=PageView&noscript=1"
             border-radius: 6px;
         }
 
-        /* Drop Cap */
         .drop-cap::first-letter {
             float: left;
             font-family: 'Merriweather', serif;
@@ -95,13 +95,11 @@ src="https://www.facebook.com/tr?id=1533492241091769&ev=PageView&noscript=1"
             color: #1f5da0;
         }
 
-        /* Yellow Highlight */
         .highlight {
             background: linear-gradient(180deg, transparent 55%, #ffe066 55%);
             padding: 0 2px;
         }
 
-        /* Continuous Underscore */
         .underscore {
             text-decoration: underline;
             text-decoration-style: solid;
@@ -109,27 +107,6 @@ src="https://www.facebook.com/tr?id=1533492241091769&ev=PageView&noscript=1"
             text-decoration-thickness: 1.5px;
         }
 
-        /* Handwritten Margin Note */
-        .margin-note {
-            font-family: 'Caveat', cursive;
-            color: #cc0000;
-            font-size: 1.15rem;
-            transform: rotate(-3deg);
-            position: relative;
-            display: inline-block;
-        }
-        .margin-note::before {
-            content: '';
-            position: absolute;
-            left: -18px;
-            top: 50%;
-            width: 14px;
-            height: 2px;
-            background: #cc0000;
-            transform: rotate(-30deg);
-        }
-
-        /* Rubber Stamp */
         .rubber-stamp {
             display: inline-block;
             border: 3px solid #cc0000;
@@ -144,15 +121,6 @@ src="https://www.facebook.com/tr?id=1533492241091769&ev=PageView&noscript=1"
             font-family: 'Inter', sans-serif;
         }
 
-        /* Red Arrow Doodle */
-        .doodle-arrow {
-            color: #cc0000;
-            font-size: 1.4rem;
-            font-weight: 900;
-            line-height: 1;
-        }
-
-        /* Screen Tint */
         .screen-tint {
             background-color: #f7f9fc;
         }
@@ -160,12 +128,10 @@ src="https://www.facebook.com/tr?id=1533492241091769&ev=PageView&noscript=1"
             background-color: #fefbf3;
         }
 
-        /* Indented paragraph */
         .indented {
             text-indent: 2em;
         }
 
-        /* Image caption */
         .img-caption {
             font-family: 'Inter', sans-serif;
             font-size: 0.85rem;
@@ -176,7 +142,6 @@ src="https://www.facebook.com/tr?id=1533492241091769&ev=PageView&noscript=1"
             line-height: 1.4;
         }
 
-        /* Guarantee border */
         .guarantee-box {
             border: 3px solid #cc0000;
             background: #fffdf7;
@@ -197,7 +162,6 @@ src="https://www.facebook.com/tr?id=1533492241091769&ev=PageView&noscript=1"
             border-radius: 3px;
         }
 
-        /* Subhead breadcrumb style */
         .subhead-breadcrumb {
             font-family: 'Merriweather', serif;
             font-weight: 700;
@@ -208,7 +172,6 @@ src="https://www.facebook.com/tr?id=1533492241091769&ev=PageView&noscript=1"
             line-height: 1.35;
         }
 
-        /* Red circle annotation */
         .red-circle {
             border: 3px solid #cc0000;
             border-radius: 50%;
@@ -216,10 +179,44 @@ src="https://www.facebook.com/tr?id=1533492241091769&ev=PageView&noscript=1"
             padding: 2px 10px;
         }
 
-        /* Signature in blue */
         .blue-sig {
             color: #1a56a8;
             font-family: 'Caveat', cursive;
+        }
+
+        .dark-story-box {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #e0e0e0;
+            border-left: 4px solid #cc0000;
+        }
+
+        .whatsapp-msg {
+            background: #dcf8c6;
+            border-radius: 8px;
+            padding: 12px 16px;
+            max-width: 85%;
+            position: relative;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            color: #1a1a1a;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+        .whatsapp-msg::after {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 12px;
+            width: 0;
+            height: 0;
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            border-right: 8px solid #dcf8c6;
+        }
+
+        .receipt-box {
+            border: 2px solid #333;
+            background: #fff;
+            box-shadow: 3px 3px 0 #333;
         }
     </style>
 </head>
@@ -234,102 +231,135 @@ src="https://www.facebook.com/tr?id=1533492241091769&ev=PageView&noscript=1"
     <div class="relative bg-blueprint pt-10 pb-24 px-4 flex flex-col items-center overflow-hidden">
         <div class="max-w-4xl mx-auto w-full flex flex-col items-center relative z-20">
             <p class="font-handwriting text-yellow-300 text-3xl md:text-4xl text-center mt-6 mb-2 -rotate-2">
-                Do NOT spend another Connect until you know why your last 20 proposals screamed "risky hire.":
+                Do NOT spend another Connect until you know this:
             </p>
 
             <h1 class="text-white text-4xl md:text-[3.5rem] font-extrabold text-center leading-tight tracking-tight mt-2">
-                You're not unskilled.You're <span class="underline decoration-yellow-300 decoration-4 underline-offset-4">unsafe</span> 
+                Why Your Last 20 Proposals Screamed <span class="underline decoration-yellow-300 decoration-4 underline-offset-4">"Risky Hire."</span>
             </h1>
 
             <div class="mt-10 space-y-5 max-w-3xl">
-                
+                <p class="text-white text-xl md:text-[1.35rem] font-medium text-center leading-tight tracking-tight">
+                    You're not unskilled. <span class="highlight">You're unsafe.</span>
+                </p>
                 <p class="text-white text-xl md:text-[1.35rem] font-medium text-center leading-tight tracking-tight">
                     A 3-line proposal twist that makes a total stranger with zero reviews feel safer to hire than a freelancer with 47 five-star ratings.
                 </p>
-                
+                <p class="text-white text-xl md:text-[1.35rem] font-medium text-center leading-tight tracking-tight">
+                    Your first <strong>$1,000</strong> is one safe "yes" away.
+                </p>
             </div>
 
             <div class="striped-box mt-12 w-full max-w-[850px] py-3 px-4 flex justify-center items-center">
-                <p class="text-white text-xl md:text-[1.35rem] font-medium text-center leading-tight tracking-tight">
-                    Your first <strong>$1,000</strong> is one safe "yes" away.
+                <p class="text-white font-bold text-center text-base md:text-xl tracking-wide">
+                    Safe. Before. Skills.
                 </p>
             </div>
         </div>
         <div class="torn-edge"></div>
     </div>
 
-    <!-- INTRO SECTION -->
+    <!-- GEORGINA'S STORY - THE MAGIC LAPTOP -->
     <div class="bg-white px-5 py-16 flex justify-center">
         <div class="max-w-[800px] w-full text-gray-900 text-[1.05rem] leading-[1.8] space-y-6">
             <div class="flex items-center space-x-4 mb-8">
                 <img src="https://i.ibb.co/Kpy6hFPW/georgina-1.png" alt="Georgina" class="w-16 h-16 rounded-full border-2 border-gray-300">
-                <p class="font-handwriting text-4xl md:text-5xl text-black">Hi, I'm Georgina.</p>
+                <p class="font-handwriting text-4xl md:text-5xl text-black">Hi... I'm Georgina.</p>
             </div>
 
-            <p class="indented">I'll introduce myself properly in just a moment.</p>
+            <p class="indented font-bold">And this is my magic laptop.</p>
 
-            <p class="indented">But first…</p>
-
-            <p class="indented font-bold">I want you to look at this.</p>
-            
             <div class="flex justify-center my-8">
                 <div>
-                    <img src="https://i.ibb.co/ds8w4d80/Screenshot-2026-08-11-184633.png" alt="Georgina's Upwork Dashboard Showing Over $104,000 Earned" class="max-w-full rounded shadow-lg border border-gray-200">
-                    <p class="img-caption">▲ Georgina's real Upwork dashboard — over <strong>$104,000</strong> earned from real clients on real contracts</p>
+                    <img src="https://i.ibb.co/YJccJGY/Gemini-Generated-Image-vzxy0bvzxy0bvzxy.jpg" alt="Georgina's Old Laptop With Cracked Screen" class="max-w-full rounded shadow-lg border-2 border-gray-300">
+                    <p class="img-caption">▲ My "magic laptop" — old, cracked screen, sticky "S" key... but it changed everything</p>
                 </div>
             </div>
-            
-            <p class="indented drop-cap">You'll notice it shows over <strong>$104,000 earned</strong> on Upwork.</p>
 
-            <p class="indented">Real money. Real clients. Real contracts.</p>
+            <p class="indented">It's old. The screen has a crack. The "S" key sticks.</p>
 
-            <p class="indented">What's even more interesting…</p>
+            <p class="indented font-bold text-black text-lg">But this ugly laptop helped me earn over <span class="highlight">$104,000</span> on Upwork.</p>
 
-            <p class="indented">That money did <strong>NOT</strong> come from sending 100 proposals a week.</p>
+            <div class="flex justify-center my-8">
+                <div>
+                    <img src="https://i.ibb.co/ds8w4d80/Screenshot-2026-08-11-184633.png" alt="Georgina's Upwork Dashboard Showing Over $104,000 Earned" class="max-w-full rounded shadow-lg border-2 border-gray-300">
+                    <p class="img-caption">▲ The proof — over <strong>$104,000</strong> earned from real clients on real contracts</p>
+                </div>
+            </div>
 
-            <p class="indented">It did <strong>NOT</strong> come from lowering my price till I was almost working for free.</p>
+            <p class="indented font-bold text-lg">And today... I'm going to show you HOW.</p>
 
-            <p class="indented">And it definitely did <strong>NOT</strong> come from buying another course… or another certification… or another "Upwork secrets" webinar.</p>
+            <div class="subhead-breadcrumb">But Sister... Before the Money... This Laptop Knew My Shame</div>
 
-            <p class="indented font-bold text-black text-xl">Every single shillings… every single dollar… came from applying a system I call <span class="highlight">The Safe-Yes Method™</span>.</p>
+            <div class="dark-story-box p-6 md:p-8 rounded-r-lg my-8 space-y-4">
+                <p class="indented mb-0">It was a <strong>Tuesday night</strong>. Around <strong>11 p.m.</strong></p>
+                <p class="indented mb-0">NEPA had taken the light. My room was dark. I was sitting on the floor... back against the wall... staring at this same laptop.</p>
+                <p class="indented mb-0"><strong>Battery: 8%.</strong></p>
+                <p class="indented mb-0">I had just sent <strong>proposal number 37</strong>. I typed it with my whole chest. "Dear Hiring Manager, I am a highly motivated professional..."</p>
+                <p class="indented mb-0">I pressed send. I waited.</p>
+                <p class="indented mb-0 font-bold text-gray-400">Nothing.</p>
+                <p class="indented mb-0">I opened my messages. Nothing. I refreshed. Nothing.</p>
+            </div>
 
-            <div class="subhead-breadcrumb">How the Safe-Yes Method™ Works</div>
+            <p class="indented">And then my phone buzzed. A WhatsApp message. My younger sister:</p>
 
-            <p class="indented">It's a simple 3-part proposal sequence that helps skilled freelancers get their <strong>FIRST paid Upwork contract</strong>… by making the client feel SAFE before you ever mention your skills, your experience, or your price.</p>
+            <div class="flex justify-start my-6 pl-4">
+                <div class="whatsapp-msg">
+                    "Sis Georgina, please can you send me ₦3,000 for my textbook? I know you're working online now 🙏"
+                </div>
+            </div>
 
-            <p class="indented">Let me say that again,</p>
+            <p class="indented font-bold text-lg">Sister... I read that message four times.</p>
 
-            <div class="striped-blue-box py-6 px-8 my-6 text-center">
-                <p class="text-white text-[1.4rem] md:text-[1.6rem] font-bold leading-snug font-serif">
-                    Safe. Before. Skills.
+            <p class="indented">Because I did <strong>NOT</strong> have any money in my account.</p>
+
+            <p class="indented">Me. A graduate. A "freelancer." The one everybody said was "working with white people online."</p>
+
+            <div class="border-2 border-[#1f5da0] bg-[#f0f6ff] py-5 px-8 text-center my-6 rounded">
+                <p class="text-[1.2rem] md:text-[1.4rem] font-bold text-[#1f5da0] font-serif italic">
+                    "Georgina... you are a liar. You are not working. You are just pressing laptop."
                 </p>
             </div>
 
-            <div class="subhead-breadcrumb">My Early Days on Upwork</div>
+            <p class="indented">I typed "I'll send it tomorrow"... deleted it... typed it again... and sent a <strong>lie</strong>.</p>
 
-            <p class="indented">In my early days on Upwork, I was selling customer service and admin support to small business owners in the US and UK.</p>
+            <p class="indented font-bold">I cried that night. Quietly. So nobody would hear.</p>
 
-            <p class="indented">Instead of bragging about what I could do…</p>
+            <div class="striped-blue-box py-6 px-8 my-8 text-center">
+                <p class="text-white text-[1.3rem] md:text-[1.5rem] font-bold leading-snug font-serif">
+                    "I will figure this out... or I will die trying."
+                </p>
+            </div>
 
-            <p class="indented">Instead of begging "please give me a chance"…</p>
+            <div class="subhead-breadcrumb">The Night Everything Changed</div>
 
-            <p class="indented">The Safe-Yes Method™ helped me <strong>remove every small fear</strong> sitting in the client's chest… one line at a time.</p>
+            <p class="indented drop-cap">So I stopped copying gurus.</p>
 
-            <p class="indented font-bold">The result? My first contract.</p>
+            <p class="indented">I stopped begging.</p>
 
-            <p class="indented">Then my second.</p>
+            <p class="indented">I went back to what I knew from my day job as a <strong>customer service manager</strong>... making scared strangers feel <span class="highlight">SAFE</span>.</p>
 
-            <p class="indented">Then a profile that <span class="underscore">sells itself while I sleep</span>.</p>
+            <p class="indented">I tested it. Line by line. Proposal by proposal.</p>
 
-            <p class="indented">And over the next few minutes, I'll show you exactly how it works…</p>
+            <p class="indented font-bold text-black text-lg">And it WORKED. Reply. Interview. Contract. Then another. Then another... until <strong>$104,000</strong>.</p>
+
+            <p class="indented">I call it <strong>The Safe-Yes Method™</strong>.</p>
+
+            <p class="indented">It's a simple 3-part proposal sequence that helps skilled Nigerian freelancers land their <strong>first paid Upwork contract</strong>... by removing the client's fear BEFORE you ever mention your skill.</p>
+
+            <p class="indented font-bold text-black text-lg">And it's the ONLY system that fixes the REAL problem...</p>
+
+            <div class="screen-tint-warm border border-[#e8dcc8] p-6 rounded my-6 text-center">
+                <p class="text-[1.2rem] md:text-[1.4rem] font-bold text-black">because you're not unskilled. You're <span class="red-circle">UNSAFE</span>.</p>
+            </div>
         </div>
     </div>
 
     <!-- WHAT THIS MEANS FOR YOU -->
     <section class="font-sans text-gray-800 antialiased w-full bg-white flex flex-col items-center">
         <div class="max-w-[800px] w-full px-5 py-10 text-[1.05rem] leading-[1.8] space-y-7">
-            
-            <div class="subhead-breadcrumb text-center text-2xl md:text-[1.6rem]">And Here's What That Means for YOU…</div>
+
+            <div class="subhead-breadcrumb text-center text-2xl md:text-[1.6rem]">So What Does This Mean for YOU?...</div>
 
             <p class="indented">Within the next <strong>90 days</strong>, you can open your Upwork app and see the words you've been praying to see:</p>
 
@@ -420,29 +450,59 @@ src="https://www.facebook.com/tr?id=1533492241091769&ev=PageView&noscript=1"
 
             <p class="indented">That's what this is.</p>
 
-            <p class="indented">Now… I know what you're thinking.</p>
+            <div class="subhead-breadcrumb">Now... I Know What You're Thinking</div>
 
             <div class="bg-gray-100 border-l-4 border-gray-400 pl-5 pr-4 py-4 italic text-gray-700 my-6 rounded-r">
-                "Georgina, I've heard all this before. Another guru. Another promise."
+                "Georgina... I've seen this before. Another sweet story. Another promise. Another 'system.'"
             </div>
 
-            <p class="indented"><strong>Fair.</strong> So let me show you something real…</p>
+            <p class="indented font-bold">Sister... I GET it.</p>
+
+            <p class="indented">If I were reading this for the first time, I'd be <em>skeptical</em> too.</p>
+
+            <p class="indented">So instead of asking you to just "trust me"... let me <strong>SHOW</strong> you.</p>
+
+            <div class="subhead-breadcrumb">Here's the Thing About Upwork Advice...</div>
+
+            <p class="indented">Everyone tells you the same thing. "Niche down." "Get certified." "Build your portfolio." "Write a killer bio."</p>
+
+            <p class="indented">And everyone follows the same steps...</p>
+
+            <p class="indented font-bold text-gray-500">And everyone gets the same result... silence.</p>
+
+            <p class="indented font-bold text-black text-lg">But the Safe-Yes Method™ works <em>completely differently</em>.</p>
+
+            <div class="my-8 py-4 px-6 bg-gray-50 border border-gray-200 rounded text-center">
+                <p class="font-bold text-black text-lg">Instead of proving you're <span class="highlight">SKILLED</span>... it removes the client's <span class="highlight">FEAR</span>.</p>
+            </div>
+
+            <p class="indented">And the reason nobody talks about this is simple... you can't stretch "make the client feel safe" into a <strong>₦150,000 course</strong>. So the gurus sell you more skill instead.</p>
+
+            <p class="indented">Therefore... when you plug into this system, you're not fighting 50 other freelancers on TALENT.</p>
+
+            <p class="indented font-bold text-black text-lg">You're the <em>only one</em> in the inbox answering the question the client is ACTUALLY asking:</p>
+
+            <div class="border-2 border-[#cc0000] bg-[#fff5f5] py-5 px-8 text-center my-6 rounded">
+                <p class="text-[1.3rem] md:text-[1.5rem] font-extrabold text-[#cc0000] font-serif">
+                    "Is this person safe to hire?"
+                </p>
+            </div>
         </div>
 
-        <!-- TRANSITION BAR -->
+        <!-- TRANSITION -->
         <div class="bg-[#313131] w-full flex justify-center py-16 px-5 mt-4">
             <div class="max-w-[800px] w-full space-y-8 text-gray-300 text-[1.05rem] leading-[1.8]">
                 <h2 class="text-white text-2xl md:text-[1.7rem] font-bold text-center leading-snug">
                     Now Meet the People Who Proved It Works…
                 </h2>
-                <p class="text-center text-xl">Real dashboards. Real earnings. Real Africans… from Nairobi to Kampala… who were stuck exactly where you are now.</p>
+                <p class="text-center text-xl">Real dashboards. Real earnings. Real Africans… from Nairobi to Kampala… who were stuck exactly where you are tonight.</p>
             </div>
         </div>
     </section>
 
     <!-- TESTIMONIAL CASE STUDIES -->
     <div class="max-w-[800px] w-full px-5 py-12 text-[1.05rem] leading-[1.8] space-y-8">
-        
+
         <div class="border-[2px] border-[#313840] bg-white shadow-lg">
             <div class="bg-[#1f5da0] text-white text-center py-5 px-6 text-[1.2rem] md:text-[1.4rem] font-bold leading-tight">
                 CASE STUDY #1: The Full Stack Developer in Nairobi Who Crossed <span class="highlight">$20,000</span> in Total Earnings!
@@ -460,19 +520,13 @@ src="https://www.facebook.com/tr?id=1533492241091769&ev=PageView&noscript=1"
                 <p class="indented">But she was skeptical... she had already rewritten her profile <strong>three times</strong>. What difference could three lines in a proposal make?</p>
                 <p class="indented">Therefore, she tried it on her <strong>very next proposal</strong>. The client replied <strong>the same day</strong>.</p>
                 <p class="indented">Therefore, today? Look at her dashboard...</p>
-                <div class="flex justify-center my-6">
-                    <div>
-                        <img src="https://i.ibb.co/215d63hq/Screenshot-2026-08-12-213959.png" alt="Joan's Upwork Dashboard Showing $20,000+ Earned" class="max-w-full rounded shadow-lg border border-gray-200">
-                        <p class="img-caption">▲ Joan's dashboard — $20,000+ earned, 12 jobs, <strong>100% Job Success</strong>, Top Rated badge</p>
-                    </div>
-                </div>
                 <div class="screen-tint border border-gray-200 p-5 rounded text-center">
                     <p class="font-bold text-black text-lg"><span class="red-circle">$20,000+</span> earned. 12 jobs. 100% Job Success. Top Rated.</p>
                     <p class="mt-2">Same skills she had all along. The only thing that changed... was <strong>the frame</strong>.</p>
                 </div>
             </div>
         </div>
-        
+
         <div class="border-[2px] border-[#313840] bg-white shadow-lg">
             <div class="bg-[#1f5da0] text-white text-center py-5 px-6 text-[1.2rem] md:text-[1.4rem] font-bold leading-tight">
                 CASE STUDY #2: The Developer in Nairobi Who Hit <span class="highlight">$40K+</span> and Now Charges <span class="highlight">$45/Hour!</span>
@@ -484,19 +538,13 @@ src="https://www.facebook.com/tr?id=1533492241091769&ev=PageView&noscript=1"
                 <p class="indented">But the day he flipped his opener to make the <strong>CLIENT feel safe</strong> instead of making himself look smart... something shifted.</p>
                 <p class="indented">Therefore, replies started coming. Then contracts. Then <strong>repeat clients</strong>.</p>
                 <p class="indented">Therefore, today his profile tells the story...</p>
-                <div class="flex justify-center my-6">
-                    <div>
-                        <img src="https://i.ibb.co/jP8QjvRH/Screenshot-2026-08-12-214109.png" alt="Dennis's Upwork Dashboard Showing $40,000+ Earned and $45/Hour Rate" class="max-w-full rounded shadow-lg border border-gray-200">
-                        <p class="img-caption">▲ Dennis's dashboard — $40,000+ earned, 48 jobs, 4.8-star rating, and a <strong>$45/hour</strong> rate</p>
-                    </div>
-                </div>
                 <div class="screen-tint border border-gray-200 p-5 rounded text-center">
                     <p class="font-bold text-black text-lg"><span class="red-circle">$40,000+</span> earned. 48 jobs. A 4.8-star rating across 40 reviews. And a rate of <strong>$45 per hour</strong>.</p>
                     <p class="mt-2">He didn't learn a new skill. He learned to make saying "yes" to him feel <strong>SAFE</strong>.</p>
                 </div>
             </div>
         </div>
-        
+
         <div class="border-[2px] border-[#313840] bg-white shadow-lg">
             <div class="bg-[#1f5da0] text-white text-center py-5 px-6 text-[1.2rem] md:text-[1.4rem] font-bold leading-tight">
                 CASE STUDY #3: The Video Editor in Kampala Who Landed Her First 3 Jobs and a <span class="highlight">Perfect 5.0 Rating!</span>
@@ -508,12 +556,6 @@ src="https://www.facebook.com/tr?id=1533492241091769&ev=PageView&noscript=1"
                 <p class="indented">But she stopped competing on experience... and started competing on <strong>SAFETY</strong>.</p>
                 <p class="indented">Therefore, a client picked <strong>HER</strong>... the "risky" beginner with an empty profile.</p>
                 <p class="indented">Therefore, today...</p>
-                <div class="flex justify-center my-6">
-                    <div>
-                        <img src="https://i.ibb.co/svbFtV17/Screenshot-2026-08-12-214449.png" alt="Amisha's Upwork Dashboard Showing First $400+ Earned and 5.0 Rating" class="max-w-full rounded shadow-lg border border-gray-200">
-                        <p class="img-caption">▲ Amisha's dashboard — her <strong>first $400+ earned</strong>, first 3 jobs, and a perfect 5.0-star rating</p>
-                    </div>
-                </div>
                 <div class="screen-tint border border-gray-200 p-5 rounded text-center">
                     <p class="font-bold text-black text-lg">Her first <span class="red-circle">$400+</span> earned. Her first 3 jobs. And a perfect <strong>5.0-star rating</strong> sitting on her profile.</p>
                     <p class="mt-2">That first contract... that first review... that's the proof that changes everything. That's the proof she can show every future client forever.</p>
@@ -523,259 +565,238 @@ src="https://www.facebook.com/tr?id=1533492241091769&ev=PageView&noscript=1"
         </div>
     </div>
 
-    <!-- THE HIDDEN PROBLEM -->
-    <section class="font-sans text-gray-800 antialiased w-full flex flex-col items-center">
-        <div class="bg-[#fafafa] w-full flex justify-center py-12 px-5">
-            <div class="max-w-[800px] w-full text-[1.05rem] leading-[1.8] space-y-6">
+    <!-- THE RECEIPTS -->
+    <section class="font-sans text-gray-800 antialiased w-full flex flex-col items-center bg-white py-12 px-5">
+        <div class="max-w-[800px] w-full text-[1.05rem] leading-[1.8] space-y-6">
 
-                <p class="indented">That's not a projection. That's not "potential."</p>
+            <div class="subhead-breadcrumb text-center text-2xl">Now... I Could Keep Telling You Stories All Day.</div>
 
-                <p class="indented">Those are <strong>real dashboards</strong>. Real earnings. Real Africans... from Nairobi to Kampala... who were stuck exactly where you are now.</p>
+            <p class="indented font-bold text-black text-lg">But I'd rather show you the <span class="highlight">receipts</span>.</p>
 
-                <p class="indented">So yes... this is <strong>REAL</strong>.</p>
+            <p class="indented font-bold">Look at these dashboards yourself...</p>
 
-                <div class="subhead-breadcrumb text-center text-2xl md:text-[1.6rem]">But Here's the Thing… If This Works So Well, Why Isn't Everyone Doing It?</div>
-
-                <p class="indented">Because of <strong>ONE hidden problem</strong> nobody talks about...</p>
-
-                <div class="subhead-breadcrumb">The Hidden Problem That's Been Sabotaging You</div>
-
-                <p class="indented drop-cap">If you're like most skilled freelancers, you've probably tried YouTube tutorials, freelancing courses, and maybe even copying proposals from people who are already winning.</p>
-
-                <p class="indented">Maybe you rewrote your profile <strong>five times</strong>.</p>
-
-                <p class="indented">Maybe you lowered your price till <em>it hurt</em>.</p>
-
-                <p class="indented">Maybe you used AI to write "perfect" proposals.</p>
-
-                <p class="indented">And after all that? <strong>Zero contracts. Zero replies.</strong> And Connects… gone.</p>
-
-                <p class="indented font-bold text-lg">listen to me.</p>
-
-                <p class="indented">I'm going to tell you something that those course sellers will <strong>never</strong> say:</p>
-
-                <div class="striped-blue-box py-10 px-6 md:px-12 my-12 text-center">
-                    <p class="text-white text-[1.5rem] md:text-[1.8rem] font-bold leading-snug font-serif">
-                        It Was NOT Your Fault.
-                    </p>
+            <div class="receipt-box p-4 md:p-6 my-8">
+                <div class="flex justify-center">
+                    <img src="https://i.ibb.co/215d63hq/Screenshot-2026-08-12-213959.png" alt="Joan's Dashboard - $20,000+ Earned" class="max-w-full rounded border border-gray-200">
                 </div>
-
-                <p class="indented">You weren't lazy. You weren't "not good enough." And Upwork is <strong>not</strong> "too hard for Nigerians."</p>
-
-                <div class="subhead-breadcrumb">The REAL Problem</div>
-
-                <p class="indented">Every proposal you've ever sent was designed to answer one question… <em>"Am I good enough?"</em></p>
-
-                <p class="indented">But that's <strong>NOT</strong> the question the client is asking.</p>
-
-                <div class="border-2 border-[#cc0000] bg-[#fff5f5] py-5 px-8 text-center my-6 rounded">
-                    <p class="text-[1.3rem] md:text-[1.5rem] font-extrabold text-[#cc0000] font-serif">
-                        The client is asking: "Will hiring this person cause me PAIN?"
-                    </p>
-                </div>
-
-                <p class="indented">Late delivery. Poor English. Disappearing after payment.</p>
-
-                <p class="indented">Bad reviews from past Nigerian freelancers they've never met but somehow fear.</p>
-
-                <div class="my-8 py-4 px-6 bg-gray-50 border border-gray-200 rounded text-center">
-                    <p class="font-bold text-black text-lg">You were selling your <span class="highlight">SKILL</span>… while the client was shopping for <span class="highlight">SAFETY</span>.</p>
-                    <p class="mt-2">You were answering a question <em>nobody asked</em>.</p>
-                </div>
-
-                <p class="indented">You were doomed from the first line. Not because of your talent. Because of <strong>the FRAME</strong>.</p>
-
-                <div class="subhead-breadcrumb">But When You Collapse the Client's Risk FIRST…</div>
-
-                <p class="indented">But when you collapse the client's risk <strong>FIRST</strong>… before you mention your skills… something completely different happens.</p>
-
-                <p class="indented">The client relaxes. The fear drops. And suddenly your zero reviews <strong>don't matter</strong>… because the client isn't hiring your history anymore.</p>
-
-                <p class="indented font-bold text-black text-xl">They're hiring <span class="highlight">their own peace of mind</span>.</p>
-            </div>
-        </div>
-
-        <!-- WHOSE FAULT -->
-        <div class="bg-white w-full flex justify-center py-12 px-5">
-            <div class="max-w-[800px] w-full text-[1.05rem] leading-[1.8] space-y-7">
-
-                <h2 class="text-3xl md:text-[2.2rem] font-extrabold text-black text-center mt-14 mb-8 tracking-tight">
-                    So If It Wasn't Your Fault… <span class="underscore">Whose Fault Was It?</span>
-                </h2>
-
-                <p class="indented drop-cap">The online "freelancing gurus" don't want you to know this.</p>
-
-                <p class="indented">Their business depends on you believing the problem is <strong>YOU</strong>… your skill, your certificate, your profile.</p>
-
-                <p class="indented">Because if the problem is you… you will <strong>keep buying</strong>. Another course. Another masterclass. Another "Upwork Algorithm Secrets for ₦25,000."</p>
-
-                <p class="indented font-bold">Think about it.</p>
-
-                <p class="indented">Has any of them ever told you the truth? That a client in Texas doesn't read proposals like a teacher grading homework… <em>he reads them like a man afraid of being scammed?</em></p>
-
-                <p class="indented"><strong>No.</strong> They sell you MORE SKILL. More credentials. More "value stacking."</p>
-
-                <p class="indented">And it's not just that they don't tell you.</p>
-
-                <p class="indented">They actively point you the wrong way. "Niche down!" "Get certified!" "Build a personal brand!"</p>
-
-                <p class="indented">Meanwhile, the actual decision… the "should I risk my money on this stranger?" moment… is <strong>never addressed</strong>.</p>
-
-                <div class="screen-tint-warm border border-[#e8dcc8] p-6 rounded my-6">
-                    <p class="indented mb-0"><strong>Why?</strong> Because "make the client feel safe" is a 3-line fix.</p>
-                    <p class="indented">You can't stretch that into a <strong>12-module course</strong>.</p>
-                </div>
-
-                <p class="indented">But a small group of Nigerian freelancers have already discovered the <span class="highlight">Safe-Yes frame</span>.</p>
-
-                <p class="indented">We're the ones who stopped performing… and started <strong>reassuring</strong>.</p>
-
-                <p class="indented">We're the ones getting replies with zero reviews while "certified experts" send proposal number <strong>60</strong> into the void.</p>
-
-                <p class="indented font-bold text-black text-xl">And now… I'm handing you the exact playbook.</p>
-            </div>
-        </div>
-
-        <!-- URGENCY SECTION -->
-        <div class="bg-[#313131] w-full flex justify-center py-16 px-5 mt-4">
-            <div class="max-w-[800px] w-full space-y-8 text-gray-300 text-[1.05rem] leading-[1.8]">
-
-                <h2 class="text-white text-2xl md:text-[1.7rem] font-bold text-center leading-snug">
-                    I Need to Be Direct With You.
-                </h2>
-
-                <p class="indented">Every week you wait, you are paying for Connects that feed a <strong>broken frame</strong>.</p>
-
-                <p class="indented">That's <span class="highlight" style="background: linear-gradient(180deg, transparent 55%, #ff9999 55%);">money burning</span>.</p>
-
-                <p class="indented">And worse… every month at zero contracts, the doubt grows <strong>teeth</strong>.</p>
-
-                <p class="indented">"Maybe I'm not good enough." That lie gets <em>louder</em>. I've watched talented people…</p>
-
-                <p class="indented">people better than me, honestly…</p>
-
-                <p class="indented">quit at <strong>month six</strong>. Right before it would have clicked.</p>
-
-                <p class="indented">Blessing almost quit. Amara almost quit.</p>
-
-                <p class="indented">The only difference between them and the ones who gave up?</p>
-
-                <p class="indented font-bold text-white text-lg">They fixed the frame BEFORE the doubt finished them.</p>
-
-                <p class="indented">And this isn't artificial scarcity.</p>
-
-                <p class="indented">Upwork is getting <strong>more crowded</strong> every single month.</p>
-
-                <p class="indented">More People are joining daily…</p>
-
-                <p class="indented">which means more proposals in every client's inbox…</p>
-
-                <p class="indented">which means clients are getting <strong>MORE scared</strong>, not less.</p>
-
-                <p class="indented">The freelancer who learns to remove fear <strong>NOW</strong> owns an advantage that <span class="underscore">compounds</span>… every review, every repeat client, every referral.</p>
-
-                <div class="striped-box mt-8 w-full max-w-[850px] py-4 px-6 flex justify-center items-center">
-                    <p class="text-white font-bold text-center text-base md:text-xl tracking-wide">
-                        So here's what I recommend. Get the playbook today. Read it in one sitting… it's short on purpose. Then send your next proposal using the 3-part sequence. <span class="highlight">Tonight.</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- GEORGINA'S STORY -->
-        <div class="max-w-[800px] w-full px-5 py-12 text-[1.05rem] leading-[1.8] space-y-6">
-            <div class="flex items-center space-x-4 mb-8">
-                <img src="https://i.ibb.co/Kpy6hFPW/georgina-1.png" alt="Georgina" class="w-16 h-16 rounded-full border-2 border-gray-300">
-                <p class="font-handwriting text-3xl md:text-4xl text-black leading-tight">Remember that feeling of being on the outside?</p>
+                <p class="img-caption mt-4">▲ See that "$20K+" at the bottom? Joan was at <strong>ZERO</strong> for months before this. Same laptop. Same skills. The only thing that changed... was <strong>the frame</strong>.</p>
             </div>
 
-            <p class="indented">While foreign freelancers with "native English" badges collected contracts…</p>
-
-            <p class="indented">everyday Nigerians like you were left sending proposals into the <strong>void</strong>.</p>
-
-            <p class="indented">I'm sure you've noticed this too, right?</p>
-
-            <div class="subhead-breadcrumb">I Was Not Born Into This</div>
-
-            <p class="indented drop-cap">When I started on Upwork, I had a skill… customer service… and nothing else.</p>
-
-            <p class="indented">No reviews.</p>
-
-            <p class="indented">No foreign clients.</p>
-
-            <p class="indented">No "social proof."</p>
-
-            <p class="indented">Just data subscription, a <strong>second-hand laptop</strong>, and prayers.</p>
-
-            <p class="indented">I sent proposals the way everyone taught me. "Dear Hiring Manager, I am a highly motivated professional…"</p>
-
-            <p class="indented font-bold text-gray-500">Silence.</p>
-
-            <p class="indented">I remember one night… <strong>11 p.m.</strong>,</p>
-
-            <p class="indented">NEPA had taken the light, my phone at <strong>12%</strong>…</p>
-
-            <p class="indented">scrolling past another "I just made $2,000 on Upwork!" post.</p>
-
-            <p class="indented">I opened my dashboard. <strong>Zero.</strong></p>
-
-            <p class="indented">I stared at the ceiling and thought the exact thought you're thinking now:</p>
-
-            <div class="border-2 border-[#1f5da0] bg-[#f0f6ff] py-5 px-8 text-center my-6 rounded">
-                <p class="text-[1.2rem] md:text-[1.4rem] font-bold text-[#1f5da0] font-serif italic">
-                    "I know how to do this work. So why can't ONE person pay me?"
-                </p>
+            <div class="receipt-box p-4 md:p-6 my-8">
+                <div class="flex justify-center">
+                    <img src="https://i.ibb.co/jP8QjvRH/Screenshot-2026-08-12-214109.png" alt="Dennis's Dashboard - $45/Hour Rate" class="max-w-full rounded border border-gray-200">
+                </div>
+                <p class="img-caption mt-4">▲ Look at that rate... <strong>$45 per HOUR</strong>. Dennis didn't get there by begging. Clients pay him premium because his proposals make them feel safe BEFORE he ever mentions code.</p>
             </div>
 
-            <div class="subhead-breadcrumb">The Moment Everything Changed</div>
+            <div class="receipt-box p-4 md:p-6 my-8">
+                <div class="flex justify-center">
+                    <img src="https://i.ibb.co/svbFtV17/Screenshot-2026-08-12-214449.png" alt="Amisha's Dashboard - First 3 Jobs, 5.0 Rating" class="max-w-full rounded border border-gray-200">
+                </div>
+                <p class="img-caption mt-4">▲ And this one... this is my <strong>favorite</strong>. Because $400 might look small next to $40K... but sister, this is the <strong>PROOF stage</strong>. Amisha was exactly where you are. Zero reviews. Empty dashboard. Now look... 3 jobs. A perfect 5.0 rating. That first contract changes <strong>EVERYTHING</strong>.</p>
+            </div>
 
-            <p class="indented">That's when I stumbled on the truth. Not from a guru. Not from a course.</p>
+            <p class="indented font-bold text-black text-lg">That's not a projection. That's not "potential earnings."</p>
 
-            <p class="indented font-bold">From my day job.</p>
-
-            <p class="indented">As a Customer Service Manager, my whole work was making angry, scared, suspicious strangers feel <strong>SAFE</strong>.</p>
-
-            <p class="indented">Calm the fear first. Solve second. I realized… a client reading proposals is just a <span class="highlight">scared customer with a budget</span>.</p>
-
-            <p class="indented">So I rebuilt my proposals around <strong>safety, not skill</strong>.</p>
-
-            <p class="indented">My next proposal got a <strong>reply</strong>.</p>
-
-            <p class="indented">Then a <strong>contract</strong>.</p>
-
-            <p class="indented">Then another.</p>
-
-            <p class="indented">Then repeat clients, referrals, long-term retainers… Customer Service Operations Lead roles… until the dashboard you're looking at crossed <strong>$104,000</strong>.</p>
-
-            <p class="indented">And now I've helped other freelancers… <strong>Amara, Chidi, Blessing</strong>… land their first contracts using the exact same frame.</p>
-
-            <p class="indented">That's why I'm sharing this with you.</p>
-
-            <p class="indented font-bold text-black text-lg">The gurus won't. It's too simple to sell for ₦150,000.</p>
+            <p class="indented">Those are <strong>real profiles</strong>. Real money. Real Africans... from Nairobi to Kampala... who were stuck exactly where you are <strong>tonight</strong>.</p>
         </div>
     </section>
 
-    <!-- HOW IT WORKS -->
+    <!-- WORLD BANK SECTION -->
     <section class="font-sans text-gray-800 antialiased w-full flex flex-col items-center screen-tint py-12 px-5">
         <div class="max-w-[800px] w-full text-[1.05rem] leading-[1.8] space-y-6">
 
+            <div class="subhead-breadcrumb text-center text-2xl">And It's Not Just Me Saying This...</div>
+
+            <p class="indented drop-cap">A World Bank report found that online freelancing is one of the <strong>FASTEST growing income paths</strong> for young Africans... with millions of new workers joining platforms like Upwork every year.</p>
+
+            <p class="indented font-bold">But here's what nobody reports...</p>
+
+            <p class="indented">The same research shows most new freelancers quit within <strong>6 months</strong>... not because they lack skill... but because they can't win <span class="highlight">TRUST</span> with foreign clients.</p>
+
+            <div class="my-8 py-4 px-6 bg-white border border-gray-200 rounded text-center shadow-sm">
+                <p class="font-bold text-black text-lg">Therefore... the freelancers who solve the <span class="highlight">TRUST problem first</span>... are the ones posting those "$2,000 payment" screenshots. <em>It's not talent separating you from them. It's the frame.</em></p>
+            </div>
+
+            <p class="indented font-bold text-black text-lg">So yes... this is <strong>REAL</strong>.</p>
+
+            <p class="indented">The proof is right in front of you. The dashboards don't lie.</p>
+
+            <div class="subhead-breadcrumb text-center text-2xl">But Here's the Thing That Keeps Me Up at Night...</div>
+
+            <p class="indented">If this works so well... why isn't <strong>EVERYONE</strong> doing it? Why are thousands of skilled Nigerians still refreshing an empty Upwork inbox at <strong>11 p.m.</strong>?</p>
+
+            <p class="indented">It's not because they're lazy.</p>
+
+            <p class="indented">It's not because they're not good enough.</p>
+
+            <p class="indented font-bold text-black text-lg">It's because of <strong>ONE hidden problem</strong> nobody talks about...</p>
+
+            <p class="indented">And until you fix it... no course, no certificate, no "perfect profile" will save you.</p>
+
+            <p class="indented font-bold text-lg">Let me explain...</p>
+        </div>
+    </section>
+
+    <!-- THE HIDDEN PROBLEM -->
+    <section class="font-sans text-gray-800 antialiased w-full flex flex-col items-center bg-white py-12 px-5">
+        <div class="max-w-[800px] w-full text-[1.05rem] leading-[1.8] space-y-6">
+
+            <div class="subhead-breadcrumb text-center text-2xl">The Hidden Problem That's Been Sabotaging You</div>
+
+            <p class="indented drop-cap">If you're like most skilled freelancers, you've probably tried YouTube tutorials, freelancing courses, and maybe even copying proposals from people who are already winning.</p>
+
+            <p class="indented">Maybe you rewrote your profile <strong>five times</strong>.</p>
+
+            <p class="indented">Maybe you lowered your price till <em>it hurt</em>.</p>
+
+            <p class="indented">Maybe you used AI to write "perfect" proposals.</p>
+
+            <p class="indented">And after all that? <strong>Zero contracts. Zero replies.</strong> And Connects… gone.</p>
+
+            <p class="indented font-bold text-lg">Sister, listen to me.</p>
+
+            <p class="indented">I'm going to tell you something that those course sellers will <strong>never</strong> say:</p>
+
+            <div class="striped-blue-box py-10 px-6 md:px-12 my-12 text-center">
+                <p class="text-white text-[1.5rem] md:text-[1.8rem] font-bold leading-snug font-serif">
+                    It Was NOT Your Fault.
+                </p>
+            </div>
+
+            <p class="indented">You weren't lazy. You weren't "not good enough." And Upwork is <strong>not</strong> "too hard for Nigerians."</p>
+
+            <div class="subhead-breadcrumb">The REAL Problem</div>
+
+            <p class="indented">Every proposal you've ever sent was designed to answer one question… <em>"Am I good enough?"</em></p>
+
+            <p class="indented">But that's <strong>NOT</strong> the question the client is asking.</p>
+
+            <div class="border-2 border-[#cc0000] bg-[#fff5f5] py-5 px-8 text-center my-6 rounded">
+                <p class="text-[1.3rem] md:text-[1.5rem] font-extrabold text-[#cc0000] font-serif">
+                    The client is asking: "Will hiring this person cause me PAIN?"
+                </p>
+            </div>
+
+            <p class="indented">Late delivery. Poor English. Disappearing after payment.</p>
+
+            <p class="indented">Bad reviews from past Nigerian freelancers they've never met but somehow fear.</p>
+
+            <div class="my-8 py-4 px-6 bg-gray-50 border border-gray-200 rounded text-center">
+                <p class="font-bold text-black text-lg">You were selling your <span class="highlight">SKILL</span>… while the client was shopping for <span class="highlight">SAFETY</span>.</p>
+                <p class="mt-2">You were answering a question <em>nobody asked</em>.</p>
+            </div>
+
+            <p class="indented">You were doomed from the first line. Not because of your talent. Because of <strong>the FRAME</strong>.</p>
+
+            <div class="subhead-breadcrumb">But When You Collapse the Client's Risk FIRST…</div>
+
+            <p class="indented">But when you collapse the client's risk <strong>FIRST</strong>… before you mention your skills… something completely different happens.</p>
+
+            <p class="indented">The client relaxes. The fear drops. And suddenly your zero reviews <strong>don't matter</strong>… because the client isn't hiring your history anymore.</p>
+
+            <p class="indented font-bold text-black text-xl">They're hiring <span class="highlight">their own peace of mind</span>.</p>
+        </div>
+    </section>
+
+    <!-- WHOSE FAULT -->
+    <section class="font-sans text-gray-800 antialiased w-full flex flex-col items-center screen-tint py-12 px-5">
+        <div class="max-w-[800px] w-full text-[1.05rem] leading-[1.8] space-y-7">
+
             <h2 class="text-3xl md:text-[2.2rem] font-extrabold text-black text-center mt-14 mb-8 tracking-tight">
-                Look… You Don't Have to Take My Word for Any of This.
+                So If It Wasn't Your Fault… <span class="underscore">Whose Fault Was It?</span>
             </h2>
 
-            <p class="indented">Just think about it.</p>
+            <p class="indented drop-cap">The online "freelancing gurus" don't want you to know this.</p>
 
-            <p class="indented">You already know clients have been burned before… late delivery, ghosting, bad work.</p>
+            <p class="indented">Their business depends on you believing the problem is <strong>YOU</strong>… your skill, your certificate, your profile.</p>
 
-            <p class="indented">And you already know a scared person says "no" to everything… <em>even good things</em>.</p>
+            <p class="indented">Because if the problem is you… you will <strong>keep buying</strong>. Another course. Another masterclass. Another "Upwork Algorithm Secrets for ₦25,000."</p>
 
-            <p class="indented">Doesn't it make sense that the freelancer who <strong>removes the fear FIRST</strong>… wins the job FIRST?</p>
+            <p class="indented font-bold">Think about it, sister.</p>
+
+            <p class="indented">Has any of them ever told you the truth? That a client in Texas doesn't read proposals like a teacher grading homework… <em>he reads them like a man afraid of being scammed?</em></p>
+
+            <p class="indented"><strong>No.</strong> They sell you MORE SKILL. More credentials. More "value stacking."</p>
+
+            <p class="indented">And it's not just that they don't tell you.</p>
+
+            <p class="indented">They actively point you the wrong way. "Niche down!" "Get certified!" "Build a personal brand!"</p>
+
+            <p class="indented">Meanwhile, the actual decision… the "should I risk my money on this stranger?" moment… is <strong>never addressed</strong>.</p>
+
+            <div class="screen-tint-warm border border-[#e8dcc8] p-6 rounded my-6">
+                <p class="indented mb-0"><strong>Why?</strong> Because "make the client feel safe" is a 3-line fix.</p>
+                <p class="indented">You can't stretch that into a <strong>12-module course</strong>.</p>
+            </div>
+
+            <p class="indented">But a small group of Nigerian freelancers have already discovered the <span class="highlight">Safe-Yes frame</span>.</p>
+
+            <p class="indented">We're the ones who stopped performing… and started <strong>reassuring</strong>.</p>
+
+            <p class="indented">We're the ones getting replies with zero reviews while "certified experts" send proposal number <strong>60</strong> into the void.</p>
+
+            <p class="indented font-bold text-black text-xl">And now… I'm handing you the exact playbook.</p>
+        </div>
+    </section>
+
+    <!-- URGENCY -->
+    <div class="bg-[#313131] w-full flex justify-center py-16 px-5">
+        <div class="max-w-[800px] w-full space-y-8 text-gray-300 text-[1.05rem] leading-[1.8]">
+
+            <h2 class="text-white text-2xl md:text-[1.7rem] font-bold text-center leading-snug">
+                I Need to Be Direct With You.
+            </h2>
+
+            <p class="indented">Every week you wait, you are paying for Connects that feed a <strong>broken frame</strong>.</p>
+
+            <p class="indented">That's <span class="highlight" style="background: linear-gradient(180deg, transparent 55%, #ff9999 55%);">money burning</span>.</p>
+
+            <p class="indented">And worse… every month at zero contracts, the doubt grows <strong>teeth</strong>.</p>
+
+            <p class="indented">"Maybe I'm not good enough." That lie gets <em>louder</em>. I've watched talented people…</p>
+
+            <p class="indented">people better than me, honestly…</p>
+
+            <p class="indented">quit at <strong>month six</strong>. Right before it would have clicked.</p>
+
+            <p class="indented">Blessing almost quit. Amara almost quit.</p>
+
+            <p class="indented">The only difference between them and the ones who gave up?</p>
+
+            <p class="indented font-bold text-white text-lg">They fixed the frame BEFORE the doubt finished them.</p>
+
+            <p class="indented">And this isn't artificial scarcity.</p>
+
+            <p class="indented">Upwork is getting <strong>more crowded</strong> every single month.</p>
+
+            <p class="indented">More People are joining daily…</p>
+
+            <p class="indented">which means more proposals in every client's inbox…</p>
+
+            <p class="indented">which means clients are getting <strong>MORE scared</strong>, not less.</p>
+
+            <p class="indented">The freelancer who learns to remove fear <strong>NOW</strong> owns an advantage that <span class="underscore">compounds</span>… every review, every repeat client, every referral.</p>
+
+            <div class="striped-box mt-8 w-full max-w-[850px] py-4 px-6 flex justify-center items-center">
+                <p class="text-white font-bold text-center text-base md:text-xl tracking-wide">
+                    So here's what I recommend. Get the playbook today. Read it in one sitting… it's short on purpose. Then send your next proposal using the 3-part sequence. <span class="highlight">Tonight.</span>
+                </p>
+            </div>
+
+            <p class="indented">You're protected by my guarantee, so the only thing you risk is the <strong>40 minutes</strong> it takes to read.</p>
+        </div>
+    </div>
+
+    <!-- HOW IT WORKS -->
+    <section class="font-sans text-gray-800 antialiased w-full flex flex-col items-center bg-white py-12 px-5">
+        <div class="max-w-[800px] w-full text-[1.05rem] leading-[1.8] space-y-6">
 
             <div class="subhead-breadcrumb text-center text-2xl">Here's How Simple This Actually Is</div>
 
             <p class="text-center font-bold text-black text-xl">The Safe-Yes Method™ is a 3-part proposal sequence:</p>
 
-            <div class="border-[2px] border-dashed border-[#d19e66] p-6 md:p-8 space-y-8 my-8 bg-white rounded">
+            <div class="border-[2px] border-dashed border-[#d19e66] p-6 md:p-8 space-y-8 my-8 bg-[#fefbf3] rounded">
                 <div class="flex items-start gap-4">
                     <div class="bg-[#1f5da0] text-white font-extrabold text-lg w-10 h-10 rounded-full flex items-center justify-center shrink-0 mt-1">1</div>
                     <div>
@@ -818,7 +839,7 @@ src="https://www.facebook.com/tr?id=1533492241091769&ev=PageView&noscript=1"
     </section>
 
     <!-- THE PRODUCT -->
-    <section class="font-sans text-gray-800 antialiased w-full flex flex-col items-center bg-white py-12 px-5">
+    <section class="font-sans text-gray-800 antialiased w-full flex flex-col items-center screen-tint py-12 px-5">
         <div class="max-w-[800px] w-full text-[1.05rem] leading-[1.8] space-y-6">
 
             <p class="indented">By now, you understand that your zero contracts were <strong>not your fault</strong>.</p>
@@ -849,7 +870,7 @@ src="https://www.facebook.com/tr?id=1533492241091769&ev=PageView&noscript=1"
 
             <div class="flex justify-center my-8">
                 <div>
-                    <img src="https://i.ibb.co/HyNk02Q/Chat-GPT-Image-Aug-14-2026-04-13-57-AM.png" alt="The Upwork Secrets System Complete Playbook" class="max-w-full rounded shadow-lg border border-gray-200">
+                    <img src="https://i.ibb.co/HyNk02Q/Chat-GPT-Image-Aug-14-2026-04-13-57-AM.png" alt="The Upwork Secrets System Complete Playbook" class="max-w-full rounded shadow-lg border-2 border-gray-300">
                     <p class="img-caption">▲ The complete Upwork Secrets System™ — everything you need to land your first contract</p>
                 </div>
             </div>
@@ -1010,26 +1031,26 @@ src="https://www.facebook.com/tr?id=1533492241091769&ev=PageView&noscript=1"
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
                 <div>
-                    <img src="https://i.ibb.co/CsvrbtjD/4-1.png" alt="Testimonial from a satisfied student" class="w-full rounded shadow-lg border border-gray-200">
+                    <img src="https://i.ibb.co/CsvrbtjD/4-1.png" alt="Testimonial from a satisfied student" class="w-full rounded shadow-lg border-2 border-gray-300">
                     <p class="img-caption">▲ Real feedback from a student who landed her first contract</p>
                 </div>
                 <div>
-                    <img src="https://i.ibb.co/Nnsqj4SS/3-1.png" alt="Testimonial from a satisfied student" class="w-full rounded shadow-lg border border-gray-200">
+                    <img src="https://i.ibb.co/Nnsqj4SS/3-1.png" alt="Testimonial from a satisfied student" class="w-full rounded shadow-lg border-2 border-gray-300">
                     <p class="img-caption">▲ Another student's experience with the Safe-Yes Method™</p>
                 </div>
                 <div>
-                    <img src="https://i.ibb.co/DD7TPdXt/2-1.png" alt="Testimonial from a satisfied student" class="w-full rounded shadow-lg border border-gray-200">
+                    <img src="https://i.ibb.co/DD7TPdXt/2-1.png" alt="Testimonial from a satisfied student" class="w-full rounded shadow-lg border-2 border-gray-300">
                     <p class="img-caption">▲ Proof that the system works for total beginners</p>
                 </div>
                 <div>
-                    <img src="https://i.ibb.co/4w2YPk4F/1-1.png" alt="Testimonial from a satisfied student" class="w-full rounded shadow-lg border border-gray-200">
+                    <img src="https://i.ibb.co/4w2YPk4F/1-1.png" alt="Testimonial from a satisfied student" class="w-full rounded shadow-lg border-2 border-gray-300">
                     <p class="img-caption">▲ Results speak louder than promises</p>
                 </div>
             </div>
 
             <div class="flex justify-center my-8">
                 <div>
-                    <img src="https://i.ibb.co/S7K3qVmD/5-1.png" alt="More student feedback and results" class="max-w-full rounded shadow-lg border border-gray-200">
+                    <img src="https://i.ibb.co/S7K3qVmD/5-1.png" alt="More student feedback and results" class="max-w-full rounded shadow-lg border-2 border-gray-300">
                     <p class="img-caption">▲ People are going crazy over this system</p>
                 </div>
             </div>
@@ -1056,9 +1077,9 @@ src="https://www.facebook.com/tr?id=1533492241091769&ev=PageView&noscript=1"
                 </div>
             </div>
 
-            <!-- PRICING BOX -->
-            <div class="bg-white border-[2px] border-[#313840] p-8 md:p-10 shadow-lg">
-                <div class="text-center mb-8">
+            <!-- VALUE STACK -->
+            <div class="bg-white border-[2px] border-[#313840] p-8 md:p-10 shadow-lg mb-10">
+                <div class="text-left mb-8">
                     <p class="text-[1.05rem] leading-[1.8]">The Upwork Secrets System™: <span class="line-through text-gray-400">₦85,000</span></p>
                     <p class="text-[1.05rem] leading-[1.8]">Proposal Swipe File: <span class="line-through text-gray-400">₦25,000</span></p>
                     <p class="text-[1.05rem] leading-[1.8]">Profile Optimization Checklist: <span class="line-through text-gray-400">₦15,000</span></p>
@@ -1069,62 +1090,21 @@ src="https://www.facebook.com/tr?id=1533492241091769&ev=PageView&noscript=1"
 
                     <div class="border-t-2 border-dashed border-gray-300 my-6"></div>
 
-                    <p class="text-[1.05rem] leading-[1.8] font-bold text-black text-xl">Total Value: ₦187,000</p>
+                    <p class="text-[1.05rem] leading-[1.8] font-bold text-black text-center text-xl">Total Value: ₦187,000</p>
                     <p class="text-[1.05rem] leading-[1.8] mt-4 text-gray-600">But you're not paying ₦187,000. Not ₦85,000. Not even ₦50,000.</p>
                     <p class="text-[1.05rem] leading-[1.8] mt-2">Today... because this is launching to the Nigerian freelancing community for the <strong>first time</strong>... you get EVERYTHING for just:</p>
-                    <p class="text-[2.5rem] md:text-[3.5rem] font-extrabold text-[#cc0000] my-4 font-serif">₦3,500</p>
+                    <p class="text-[2.5rem] md:text-[3.5rem] font-extrabold text-[#cc0000] my-4 font-serif text-center">₦3,500</p>
                     <p class="text-[1.05rem] leading-[1.8] text-gray-600">That's less than what you've already burned on Connects that went nowhere. And unlike those Connects... <strong>this doesn't disappear into the void.</strong></p>
                 </div>
-
-                <div class="border-[2px] border-dashed border-[#d19e66] p-6 md:p-8 mb-8 bg-[#fefbf3]">
-                    <h3 class="font-bold text-black text-xl mb-4 text-center">Here's What You Are Going to Get</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-[#f28500] mr-3 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                            <span>The Upwork Secrets System™ <span class="text-gray-400">(₦85,000 Value)</span></span>
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-[#f28500] mr-3 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                            <span>Proposal Swipe File <span class="text-gray-400">(₦25,000 Value)</span></span>
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-[#f28500] mr-3 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                            <span>Profile Optimization Checklist <span class="text-gray-400">(₦15,000 Value)</span></span>
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-[#f28500] mr-3 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                            <span>Client Interview Script <span class="text-gray-400">(₦20,000 Value)</span></span>
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-[#f28500] mr-3 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                            <span>Premium Pricing Framework <span class="text-gray-400">(₦20,000 Value)</span></span>
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-[#f28500] mr-3 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                            <span>30-Day Action Plan <span class="text-gray-400">(₦22,000 Value)</span></span>
-                        </li>
-                        
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-[#f28500] mr-3 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                            <span>My 60-Day "First Contract" Guarantee <span class="text-gray-400">(Priceless)</span></span>
-                        </li>
-                    </ul>
-                    <div class="border-t-2 border-dashed border-gray-300 my-5"></div>
-                    <p class="text-center font-bold text-black text-xl">Total Value: <span class="line-through text-gray-400">₦187,000</span></p>
-                    <p class="text-center mt-2 font-bold text-[#cc0000] text-3xl font-serif">Your Investment Today: ₦3,500</p>
-                </div>
-
-                <p class="text-center mb-6 text-[#cc0000] font-bold text-lg">
-                    ⚠ This price disappears when the timer runs out. After that: ₦15,000. Bonuses gone.
-                </p>
-
-                <div class="flex justify-center w-full my-8">
-                    <button onclick="window.location.href='https://nestuge.com/checkout?items=%5B%7B%22id%22%3A%22pr_mssdv9karhuxvaw61tcpinmkztpv0%22%2C%22type%22%3A%22registration%22%2C%22plan%22%3A%22pl_msu5b17lltdq0njr6xhjmchs5g1sg%22%2C%22count%22%3A1%2C%22affiliate%22%3Anull%7D%5D&currency=NGN&redirectUrl=https%3A%2F%2Fnestuge.com%2Fz8-irwvrn'"
-        class="bg-[#f28500] hover:bg-[#d97700] text-white font-bold py-5 px-8 md:px-12 rounded shadow-[0_5px_0_#c76d00] text-lg md:text-xl transition-transform active:translate-y-[5px] active:shadow-none text-center w-full max-w-[650px]">
-    YES — MAKE ME THE SAFE CHOICE →
-</button>
+                <div class="flex justify-center w-full my-10">
+                    <button onclick="window.location.href='https://paystack.shop/pay/upwoirk'"
+                        class="bg-[#f28500] hover:bg-[#d97700] text-white font-bold py-5 px-8 md:px-12 rounded shadow-[0_5px_0_#c76d00] text-lg md:text-xl transition-transform active:translate-y-[5px] active:shadow-none text-center w-full max-w-[650px]">
+                        YES — MAKE ME THE SAFE CHOICE →
+                    </button>
                 </div>
             </div>
+
+            
 
             <!-- CLOSING SECTION -->
             <div class="bg-white p-8 md:p-10 mt-10">
@@ -1168,6 +1148,13 @@ src="https://www.facebook.com/tr?id=1533492241091769&ev=PageView&noscript=1"
 
                 <p class="text-[1.05rem] leading-[1.8] mb-8 indented font-bold text-lg">Click the button below. It takes <strong>90 seconds</strong>. The system arrives instantly.</p>
 
+                <div class="flex justify-center w-full my-10">
+                    <button onclick="window.location.href='https://paystack.shop/pay/upwoirk'"
+                        class="bg-[#f28500] hover:bg-[#d97700] text-white font-bold py-5 px-8 md:px-12 rounded shadow-[0_5px_0_#c76d00] text-lg md:text-xl transition-transform active:translate-y-[5px] active:shadow-none text-center w-full max-w-[650px]">
+                        YES — MAKE ME THE SAFE CHOICE →
+                    </button>
+                </div>
+
                 <p class="text-[1.05rem] leading-[1.8] mb-2">I can't wait to hear about your first "Contract started."</p>
                 <p class="blue-sig text-3xl md:text-4xl mb-8">— Georgina</p>
 
@@ -1176,10 +1163,10 @@ src="https://www.facebook.com/tr?id=1533492241091769&ev=PageView&noscript=1"
                 </div>
 
                 <div class="flex justify-center w-full my-10">
-                    <button onclick="window.location.href='https://nestuge.com/checkout?items=%5B%7B%22id%22%3A%22pr_mssdv9karhuxvaw61tcpinmkztpv0%22%2C%22type%22%3A%22registration%22%2C%22plan%22%3A%22pl_msu5b17lltdq0njr6xhjmchs5g1sg%22%2C%22count%22%3A1%2C%22affiliate%22%3Anull%7D%5D&currency=NGN&redirectUrl=https%3A%2F%2Fnestuge.com%2Fz8-irwvrn'"
-        class="bg-[#f28500] hover:bg-[#d97700] text-white font-bold py-5 px-8 md:px-12 rounded shadow-[0_5px_0_#c76d00] text-lg md:text-xl transition-transform active:translate-y-[5px] active:shadow-none text-center w-full max-w-[650px]">
-    YES — MAKE ME THE SAFE CHOICE →
-</button>
+                    <button onclick="window.location.href='https://paystack.shop/pay/upwoirk'"
+                        class="bg-[#f28500] hover:bg-[#d97700] text-white font-bold py-5 px-8 md:px-12 rounded shadow-[0_5px_0_#c76d00] text-lg md:text-xl transition-transform active:translate-y-[5px] active:shadow-none text-center w-full max-w-[650px]">
+                        YES — MAKE ME THE SAFE CHOICE →
+                    </button>
                 </div>
             </div>
         </div>
